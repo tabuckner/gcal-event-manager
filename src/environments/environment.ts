@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: 'AIzaSyAaJa-Vd1wN2TJ6hP92vdKRq_leVbD7Qn0',
+    authDomain: 'gcal-event-manager.firebaseapp.com',
+    databaseURL: 'https://gcal-event-manager.firebaseio.com',
+    projectId: 'gcal-event-manager',
+    storageBucket: 'gcal-event-manager.appspot.com',
+    messagingSenderId: '440296727946'
+  }
 };
 
 /*
