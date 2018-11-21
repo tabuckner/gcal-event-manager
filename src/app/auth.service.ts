@@ -9,7 +9,6 @@ import { auth } from 'firebase/app';
 })
 export class AuthService {
   public user$: Observable<firebase.User>;
-  calendarItems: [];
 
   constructor(public afAuth: AngularFireAuth) {
     this.initGoogleApiClient();
@@ -44,5 +43,4 @@ export class AuthService {
   public logOut() {
     this.afAuth.auth.signOut();
   }
-
 }

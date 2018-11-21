@@ -442,6 +442,16 @@
   dependencies:
     "@types/gapi" "*"
 
+"@types/gapi.client.calendar@v3":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@types/gapi.client.calendar/-/gapi.client.calendar-3.0.0.tgz#ebcde8788a02aad000eb8484361501eaf174ac6a"
+  dependencies:
+    "@types/gapi.client" "*"
+
+"@types/gapi.client@*", "@types/gapi.client@^1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@types/gapi.client/-/gapi.client-1.0.0.tgz#aa42501465fcf6440421050da70ec724d4c4c4df"
+
 "@types/gapi@*", "@types/gapi@^0.0.36":
   version "0.0.36"
   resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.36.tgz#e7fb3d4d4a6fbdbd0a9aef1cbd93d3b115d59a3d"

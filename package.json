@@ -38,6 +38,8 @@
     "@angular/language-service": "~7.0.0",
     "@types/gapi": "^0.0.36",
     "@types/gapi.auth2": "^0.0.48",
+    "@types/gapi.client": "^1.0.0",
+    "@types/gapi.client.calendar": "v3",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
