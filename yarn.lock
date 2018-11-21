@@ -436,6 +436,16 @@
     semver "5.5.1"
     semver-intersect "1.4.0"
 
+"@types/gapi.auth2@^0.0.48":
+  version "0.0.48"
+  resolved "https://registry.yarnpkg.com/@types/gapi.auth2/-/gapi.auth2-0.0.48.tgz#bef480ecf6dce133ec2613107f966880b3cb1935"
+  dependencies:
+    "@types/gapi" "*"
+
+"@types/gapi@*", "@types/gapi@^0.0.36":
+  version "0.0.36"
+  resolved "https://registry.yarnpkg.com/@types/gapi/-/gapi-0.0.36.tgz#e7fb3d4d4a6fbdbd0a9aef1cbd93d3b115d59a3d"
+
 "@types/jasmine@*":
   version "3.3.0"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.0.tgz#6b0e4b0192367d77e438ff660ccc4487c9602e7b"
