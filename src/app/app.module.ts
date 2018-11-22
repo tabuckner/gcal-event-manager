@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { CoreModule } from './core/core.module';
+import { LayoutModule } from './layout/layout.module';
 import { HomeModule } from './home/home.module';
 import { NewEventModule } from './new-event/new-event.module';
 
@@ -19,6 +20,7 @@ import { NewEventModule } from './new-event/new-event.module';
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     CoreModule.forRoot(),
+    LayoutModule,
     HomeModule,
     NewEventModule
   ],
