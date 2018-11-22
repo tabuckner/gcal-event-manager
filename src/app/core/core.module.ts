@@ -14,7 +14,6 @@ import { CalendarService } from './services/calendar.service';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule
   ],
-  declarations: [],
 })
 export class CoreModule {
   constructor (@Optional() @SkipSelf() parentModule?: CoreModule) {
