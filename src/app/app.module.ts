@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFireModule } from '@angular/fire';
-import { AngularFireAuthModule } from '@angular/fire/auth';
+import { CoreModule } from './core/core.module';
+
 
 @NgModule({
   declarations: [
@@ -18,8 +18,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
     AppRoutingModule,
     ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
     BrowserAnimationsModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAuthModule
+    CoreModule
   ],
   providers: [],
   bootstrap: [AppComponent]

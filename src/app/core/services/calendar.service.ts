@@ -1,9 +1,7 @@
 import { Injectable } from '@angular/core';
-import { AuthService } from './auth.service';
+import { AuthService } from '../authentication/auth.service';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class CalendarService {
   public calendarItems: any[];
 
