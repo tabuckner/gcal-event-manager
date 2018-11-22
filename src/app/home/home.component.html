@@ -2,7 +2,6 @@
   <h2>You are Logged In As:</h2>
   <h3>{{ user.displayName }}</h3>
   <button (click)="calendar.getCalendar()">Get Calendar Events</button>
-  <button (click)="calendar.createEvent()">Create Test Event</button>
   <div>
     <div *ngFor="let item of calendar.calendarItems">
       <ul>
