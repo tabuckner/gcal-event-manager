@@ -1,0 +1,21 @@
+<div *ngIf="auth.user$ | async as user">
+  <h2>You are Logged In As:</h2>
+  <h3>{{ user.displayName }}</h3>
+  <button (click)="calendar.getCalendar()">Get Calendar Events</button>
+  <button (click)="calendar.createEvent()">Create Test Event</button>
+  <div>
+    <div *ngFor="let item of calendar.calendarItems">
+      <ul>
+        <li>Summary: {{ item.summary }}</li>
+        <li>Created: {{ item.created | date }}</li>
+        <li>Start: {{ item.start.date }}</li>
+        <li>End: {{ item.end.date }}</li>
+        <li>Link: <a target="_blank" [href]="item.htmlLink">Link</a></li>
+        <li>ID: {{ item.id }}</li>
+      </ul>
+      <hr>
+    </div>
+  </div>
+</div>
+<button (click)="auth.logIn()">Log In</button>
+<button (click)="auth.logOut()">Log Out</button>
