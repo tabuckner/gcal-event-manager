@@ -26,6 +26,9 @@ module.exports = function (config) {
     logLevel: config.LOG_INFO,
     autoWatch: true,
     browsers: ['Chrome'],
-    singleRun: false
+    singleRun: false,
+    files: [ // FIXME: Issues with GAPI and Angular. https://github.com/karma-runner/karma/issues/421
+      '../test-assets/gapi.11-22-2018.js' // FIXME: If Angular GAPI wrapper is released, fix this.
+    ]
   });
 };
