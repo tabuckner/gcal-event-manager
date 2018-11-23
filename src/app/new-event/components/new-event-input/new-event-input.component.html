@@ -1,0 +1,30 @@
+<mat-card>
+  <mat-card-title>Create a New Event</mat-card-title>
+  <form>
+    <mat-form-field class="full-width">
+      <!-- Binds to Summary -->
+      <input matInput type="text" placeholder="Name">
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <!-- Binds to Description, optional -->
+      <textarea matInput placeholder="Description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <!-- Binds to Start Date -->
+      <input matInput [matDatepicker]="pickerStart" placeholder="Choose a Start Date">
+      <mat-datepicker-toggle matSuffix [for]="pickerStart"></mat-datepicker-toggle>
+      <mat-datepicker #pickerStart></mat-datepicker>
+    </mat-form-field>
+
+    <mat-slide-toggle [(ngModel)]="endDateEnabled" name="toggleEndDateEnabled">End Date</mat-slide-toggle>
+    <mat-form-field class="full-width" *ngIf="endDateEnabled">
+      <!-- Binds to End Date, optional, disabled default -->
+      <input matInput [matDatepicker]="pickerEnd" placeholder="Choose a Start Date">
+      <mat-datepicker-toggle matSuffix [for]="pickerEnd"></mat-datepicker-toggle>
+      <mat-datepicker #pickerEnd></mat-datepicker>
+    </mat-form-field>
+
+  </form>
+</mat-card>
