@@ -1,0 +1,11 @@
+<mat-form-field class="full-width">
+  <select matNativeControl #recurrence="ngModel" [(ngModel)]="recurrenceValue">
+    <option [value]="'never'">Never Repeats</option>
+    <option [value]="'weeklyStartingToday'">Daily Starting Today</option>
+    <option [value]="'weeklyStartingToday'">Weekly Starting Today</option>
+    <option [value]="'monthlyStartingToday'">Monthly Starting Today</option>
+    <option [value]="'custom'">Custom</option>
+  </select>
+</mat-form-field>
+<app-custom-recurrence *ngIf="recurrenceValue === 'custom'"></app-custom-recurrence>
+

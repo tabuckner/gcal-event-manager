@@ -1,0 +1,13 @@
+<div class="custom-recurrence">
+  <span class="custom-recurrence__label">Repeat Every</span>
+  <mat-form-field class="custom-recurrence__quantity">
+    <input matInput type="number" min="1" [value]="recurrenceQuantity">
+  </mat-form-field>
+  <mat-form-field class="custom-recurrence__unit">
+      <select matNativeControl #recurrenceUnit="ngModel" [(ngModel)]="recurrenceUnitValue">
+          <option [value]="'day'">Day</option>
+          <option [value]="'week'">Week</option>
+          <option [value]="'month'">Month</option>
+        </select>
+  </mat-form-field>
+</div>
