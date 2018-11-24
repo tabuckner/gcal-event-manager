@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-recurrence',
@@ -6,11 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./recurrence.component.scss']
 })
 export class RecurrenceComponent implements OnInit {
-  recurrenceValue = 'never';
+  @Input() public parentForm: FormGroup;
 
   constructor() { }
 
   ngOnInit() {
+    console.log(this.parentForm);
   }
 
 }

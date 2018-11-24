@@ -8,24 +8,33 @@ import {
   MatInputModule,
   MatDatepickerModule,
   MatSlideToggleModule,
-  MatCheckboxModule
+  MatCheckboxModule,
+  MatListModule
 } from '@angular/material';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { CustomRecurrenceComponent } from './components/custom-recurrence/custom-recurrence.component';
 import { RecurrenceComponent } from './components/recurrence/recurrence.component';
 import { RecurrenceDayPickerComponent } from './components/recurrence-day-picker/recurrence-day-picker.component';
 
 @NgModule({
-  declarations: [NewEventComponent, NewEventInputComponent, CustomRecurrenceComponent, RecurrenceComponent, RecurrenceDayPickerComponent],
+  declarations: [
+    NewEventComponent,
+    NewEventInputComponent,
+    CustomRecurrenceComponent,
+    RecurrenceComponent,
+    RecurrenceDayPickerComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
+    ReactiveFormsModule,
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
     MatDatepickerModule,
     MatSlideToggleModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatListModule
   ]
 })
 export class NewEventModule { }

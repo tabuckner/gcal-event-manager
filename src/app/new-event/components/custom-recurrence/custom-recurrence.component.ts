@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-custom-recurrence',
@@ -6,8 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./custom-recurrence.component.scss']
 })
 export class CustomRecurrenceComponent implements OnInit {
-  recurrenceQuantity = 1;
-  recurrenceUnitValue = 'day'; // FIXME: replace with better solution when changing to reactive forms module.
+  @Input() public parentForm: FormGroup;
 
   constructor() { }
 
