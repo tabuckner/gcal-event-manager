@@ -9,6 +9,7 @@ import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { HomeModule } from './home/home.module';
 import { NewEventModule } from './new-event/new-event.module';
+import { MatNativeDateModule } from '@angular/material';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NewEventModule } from './new-event/new-event.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
+    ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production }),
+    MatNativeDateModule,
     CoreModule.forRoot(),
     LayoutModule,
     HomeModule,

@@ -1,0 +1,14 @@
+<div class="custom-recurrence" [formGroup]="parentForm">
+  <span class="custom-recurrence__label">Repeat Every</span>
+  <mat-form-field class="custom-recurrence__quantity">
+    <input matInput type="number" min="1" formControlName="customRepeatQuantity">
+  </mat-form-field>
+  <mat-form-field class="custom-recurrence__unit">
+      <select matNativeControl formControlName="customRepeatInterval">
+          <option [value]="'day'">Day</option>
+          <option [value]="'week'">Week</option>
+          <option [value]="'month'">Month</option>
+        </select>
+  </mat-form-field>
+</div>
+<app-recurrence-day-picker [parentForm]="parentForm"></app-recurrence-day-picker>

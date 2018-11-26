@@ -1,0 +1,9 @@
+<div class="full-width" [formGroup]="parentForm">
+  <mat-checkbox
+    *ngFor="let day of parentForm.controls['customRepeatDays'].controls; let i = index"
+    style="margin-right: 8px"
+    [(checked)]="day.value.checked"
+    (change)="handleCheckboxChange(i)">
+    {{ day.value.label.slice(0,1).toUpperCase() }}
+  </mat-checkbox>
+</div>
